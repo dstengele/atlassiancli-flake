@@ -29,15 +29,15 @@
             "aarch64-darwin" = "darwin";
           }."${system}";
           checksum = {
-            "x86_64-linux" = "sha256-rLkgU6XIawU/0iifZmvqZQvSL5icpNMEJs/KTudL16o=";
-            "x86_64-darwin" = "sha256-wVJZNhIVoRLekj8fgu1aPOmOqfHdRg87+qmorj7yJwc= ";
-            "aarch64-linux" = "sha256-WEBLpR2QN4xrAaHsXzQnR0srtJ8TcTaaJdx2DOIUjxI=";
-            "aarch64-darwin" = "sha256-SOE4SeaQVBvMbMwdUR44xX27x0mTJxDWmIgUx7Wsuxs=";
+            "x86_64-linux" = "sha256-O4c426w3jszp7sVignU8d9QD7zQONWd7NjkK2VQWe80=";
+            "x86_64-darwin" = "sha256-Og87J6jKDnLXaKp15QyVKLeLWjKw5Pm3kVcI/JkVdnk=";
+            "aarch64-linux" = "sha256-WDO+YwaTeEZG/Yt0L3DiRBh/FNZfgJXlF3aGR3LorRI=";
+            "aarch64-darwin" = "sha256-SF3zJ0Q/varFTUYDucEUR5dX/qYPECNgdaHlJAtSOAA=";
           }."${system}";
         in rec {
           default = pkgs.stdenv.mkDerivation rec {
             name = "acli-${version}";
-            version = "1.2.1";
+            version = "1.3.2";
 
             src = pkgs.fetchzip {
               url = "https://acli.atlassian.com/${downloadPathPartOs}/${version}-stable/acli_${version}-stable_${downloadPathPartArchitecture}.tar.gz";
