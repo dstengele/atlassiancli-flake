@@ -5,5 +5,5 @@ Atlassian distributes binaries for their new [CLI](https://developer.atlassian.c
 ## Running
 
 ```shell
-nix run github:dstengele/atlassian-cli
+nix run git+https://radicle.schuppentier.org/z3B4ec5nPjyK2FBcPfgecj6BAkLDZ.git
 ```
